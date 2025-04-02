@@ -90,7 +90,7 @@ def q11():
 def q12():
     num = float(input("digite o número: "))
     print(f" O resultado foi de: {num**2}  ")
-q12()
+
 
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
@@ -110,6 +110,17 @@ def q13():
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
+def q16():
+salario = float(input('salário: '))
+percentual_reajuste = float(input('reajuste(%): '))
+novo_salario = round(salario*percentual_reajuste/100 + salario,2)
+texto = f'''
+salário de R$ {salario}
+com reajuste de {percentual_reajuste}%
+ficou em R$ {novo_salario} 
+'''
+print(texto)
+q16():
 
 #17. Faça um programa que calcule a conversão entre graus centígrados
 #    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
@@ -129,6 +140,18 @@ def q13():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def q18():
+tempo_viagem = int(input('Tempo da viagem (minutos): '))/60
+velocidade_media = int(input('velocidade media (km/h): '))
+distancia = tempo_viagem * velocidade_media
+litros_gastos = distancia / 12
+texto = f'''
+duração da viagem: {tempo_viagem*60} minutos ou {tempo_viagem} horas
+velocidade média: {velocidade_media} km/h
+distancia percorrida: {distancia} kms
+litros gastos: {litros_gastos} litros
+'''
+print(texto)
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -136,7 +159,13 @@ def q13():
 #    programa deve imprimir o valor da prestação atrasada, o período
 #    de atraso, os juros que serão cobrados pelo período de atraso, o
 #    valor da prestação acrescido dos juros. Considere juros simples.
+def q19():
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
+def q20():
+qt de dolares = float(input('qt de dolares: uss '))
+cambio_dolar = float(input('cambio do dolar: R$'))
+print(f'total')
+
